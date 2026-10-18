@@ -172,6 +172,25 @@ python -m pip check
 - Explore answer generation with citations only after retrieval quality and grounding are evaluated.
 
 
+## Experiment results
+
+The following reports are generated from the benchmark and evaluation scripts.
+
+### Retrieval comparison
+
+![Retrieval comparison chart](reports/retrieval_comparison.svg)
+
+- [Retrieval metrics](reports/retrieval_comparison.md)
+
+### Abstention evaluation
+
+![Abstention similarity scores](reports/abstention_scores.svg)
+
+- [Per-question abstention results](reports/abstention_evaluation.md)
+
+On the current four-question out-of-scope probe, 3 questions were rejected and 1 was incorrectly accepted. This small experiment illustrates why semantic similarity alone cannot establish that retrieved evidence answers a question.
+
+
 ## 📜 License
 
 © 2025 Gouthami Nadupuri
@@ -198,21 +217,3 @@ Data & AI Engineer | Creator of CurioGalaxy 💫
 🔗 LinkedIn: https://www.linkedin.com/in/gouthami-nadupuri
 
 🔗 GitHub: https://github.com/GouthamiN25
-
-## Experiment results
-
-The following reports are generated from the benchmark and evaluation scripts.
-
-### Retrieval comparison
-
-![Retrieval comparison chart](reports/retrieval_comparison.svg)
-
-- [Retrieval metrics](reports/retrieval_comparison.md)
-
-### Abstention evaluation
-
-![Abstention similarity scores](reports/abstention_scores.svg)
-
-- [Per-question abstention results](reports/abstention_evaluation.md)
-
-On the current four-question out-of-scope probe, 3 questions were rejected and 1 was incorrectly accepted. This small experiment illustrates why semantic similarity alone cannot establish that retrieved evidence answers a question.
