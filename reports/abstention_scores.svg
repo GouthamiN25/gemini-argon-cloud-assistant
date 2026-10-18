@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1050" height="520" viewBox="0 0 1050 520">
+<rect width="100%" height="100%" fill="white"/>
+<text x="525.0" y="35" text-anchor="middle" font-family="Arial" font-size="22" font-weight="bold">Question similarity scores vs. abstention threshold</text>
+<line x1="90" y1="385.0" x2="1015" y2="385.0" stroke="#dddddd"/>
+<text x="78" y="390.0" text-anchor="end" font-family="Arial" font-size="13">0.00</text>
+<line x1="90" y1="323.0" x2="1015" y2="323.0" stroke="#dddddd"/>
+<text x="78" y="328.0" text-anchor="end" font-family="Arial" font-size="13">0.14</text>
+<line x1="90" y1="261.0" x2="1015" y2="261.0" stroke="#dddddd"/>
+<text x="78" y="266.0" text-anchor="end" font-family="Arial" font-size="13">0.28</text>
+<line x1="90" y1="199.0" x2="1015" y2="199.0" stroke="#dddddd"/>
+<text x="78" y="204.0" text-anchor="end" font-family="Arial" font-size="13">0.42</text>
+<line x1="90" y1="137.00000000000003" x2="1015" y2="137.00000000000003" stroke="#dddddd"/>
+<text x="78" y="142.00000000000003" text-anchor="end" font-family="Arial" font-size="13">0.56</text>
+<line x1="90" y1="75.0" x2="1015" y2="75.0" stroke="#dddddd"/>
+<text x="78" y="80.0" text-anchor="end" font-family="Arial" font-size="13">0.70</text>
+<line x1="90" y1="296.4285714285714" x2="1015" y2="296.4285714285714" stroke="#c2410c" stroke-width="2" stroke-dasharray="7 5"/>
+<text x="1010" y="288.4285714285714" text-anchor="end" font-family="Arial" font-size="13" fill="#c2410c">Threshold 0.20</text>
+<rect x="134.58333333333331" y="339.74" width="65" height="45.26" fill="#0f766e"/>
+<text x="167.08333333333331" y="331.74" text-anchor="middle" font-family="Arial" font-size="13">0.102</text>
+<text transform="translate(167.08333333333331,403) rotate(35)" text-anchor="start" font-family="Arial" font-size="12">Cake</text>
+<rect x="288.75" y="313.25714285714287" width="65" height="71.74285714285715" fill="#0f766e"/>
+<text x="321.25" y="305.25714285714287" text-anchor="middle" font-family="Arial" font-size="13">0.162</text>
+<text transform="translate(321.25,403) rotate(35)" text-anchor="start" font-family="Arial" font-size="12">World Series</text>
+<rect x="442.91666666666663" y="216.13857142857142" width="65" height="168.86142857142858" fill="#dc2626"/>
+<text x="475.41666666666663" y="208.13857142857142" text-anchor="middle" font-family="Arial" font-size="13">0.381</text>
+<text transform="translate(475.41666666666663,403) rotate(35)" text-anchor="start" font-family="Arial" font-size="12">BigQuery price</text>
+<rect x="597.0833333333334" y="340.22714285714284" width="65" height="44.77285714285714" fill="#0f766e"/>
+<text x="629.5833333333334" y="332.22714285714284" text-anchor="middle" font-family="Arial" font-size="13">0.101</text>
+<text transform="translate(629.5833333333334,403) rotate(35)" text-anchor="start" font-family="Arial" font-size="12">Weather</text>
+<rect x="751.25" y="121.05714285714288" width="65" height="263.9428571428571" fill="#2563eb"/>
+<text x="783.75" y="113.05714285714288" text-anchor="middle" font-family="Arial" font-size="13">0.596</text>
+<text transform="translate(783.75,403) rotate(35)" text-anchor="start" font-family="Arial" font-size="12">Cloud Run cost</text>
+<rect x="905.4166666666666" y="145.19285714285715" width="65" height="239.80714285714285" fill="#2563eb"/>
+<text x="937.9166666666666" y="137.19285714285715" text-anchor="middle" font-family="Arial" font-size="13">0.541</text>
+<text transform="translate(937.9166666666666,403) rotate(35)" text-anchor="start" font-family="Arial" font-size="12">IAM roles</text>
+<text transform="translate(25,230.0) rotate(-90)" text-anchor="middle" font-family="Arial" font-size="14">Cosine similarity</text>
+</svg>

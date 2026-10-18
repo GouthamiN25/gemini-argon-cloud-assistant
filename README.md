@@ -1,8 +1,8 @@
-# Gemini Argon Cloud Assistant
+# Local RAG Retrieval Assistant
 
 A local-first, document-grounded retrieval assistant exploring RAG architecture, semantic search, hybrid retrieval, and evaluation using Google Cloud–related documentation.
 
-> **Current scope:** This project retrieves and displays supporting document passages. It does not yet generate answers with an LLM or call Gemini or other hosted AI APIs.
+> **Scope:** This project implements local keyword, semantic, and hybrid retrieval. It displays supporting evidence and evaluates retrieval quality and experimental abstention. It does not integrate Gemini or Argon and does not generate LLM answers.
 
 ## Why this project?
 
@@ -174,3 +174,21 @@ python -m pip check
 ## License
 
 Add a license before distributing or reusing this project under explicit open-source terms.
+
+## Experiment results
+
+The following reports are generated from the benchmark and evaluation scripts.
+
+### Retrieval comparison
+
+![Retrieval comparison chart](reports/retrieval_comparison.svg)
+
+- [Retrieval metrics](reports/retrieval_comparison.md)
+
+### Abstention evaluation
+
+![Abstention similarity scores](reports/abstention_scores.svg)
+
+- [Per-question abstention results](reports/abstention_evaluation.md)
+
+On the current four-question out-of-scope probe, 3 questions were rejected and 1 was incorrectly accepted. This small experiment illustrates why semantic similarity alone cannot establish that retrieved evidence answers a question.
