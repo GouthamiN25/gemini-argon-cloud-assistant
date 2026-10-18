@@ -1,9 +1,79 @@
 [
   {
-    "chunk_id": "gemini_argon_notes.md::chunk-0",
-    "source": "gemini_argon_notes.md",
-    "title": "Gemini Argon Notes",
+    "chunk_id": "cloud_run_deployment.md::chunk-0",
+    "source": "cloud_run_deployment.md",
+    "title": "Cloud Run Deployment",
     "chunk_index": 0,
-    "text": "# Gemini 4 Argon and Google Cloud\n\n## Model integration\n\nA cloud AI application separates the model from the application that calls it. The application sends a request to a model endpoint and processes the response.\n\n## Document-grounded question answering\n\nA retrieval system searches a document collection for relevant passages. Those passages can be provided as context to a language model so the answer can be grounded in the available documents.\n\n## Application deployment\n\nCloud Run can host a web application or API that calls a model service. The application still needs authentication, error handling, logging, and appropriate access controls."
+    "text": "# Deploying AI Applications on Cloud Run\n\nCloud Run is a managed Google Cloud platform for running containerized applications. It can host an API or web service that receives user questions, calls a model endpoint, retrieves relevant documents, and returns answers."
+  },
+  {
+    "chunk_id": "cloud_run_deployment.md::chunk-1",
+    "source": "cloud_run_deployment.md",
+    "title": "Cloud Run Deployment",
+    "chunk_index": 1,
+    "text": "Cloud Run manages infrastructure tasks such as provisioning application instances and scaling according to demand. Developers remain responsible for application logic, authentication and authorization, input validation, error handling, dependency management, and secure configuration."
+  },
+  {
+    "chunk_id": "cloud_run_deployment.md::chunk-2",
+    "source": "cloud_run_deployment.md",
+    "title": "Cloud Run Deployment",
+    "chunk_index": 2,
+    "text": "An AI application deployed on Cloud Run may also need access to a document store, a database, or a model API. IAM permissions, service identities, networking, logging, and cost controls should be considered during deployment."
+  },
+  {
+    "chunk_id": "model_integration_notes.md::chunk-0",
+    "source": "model_integration_notes.md",
+    "title": "Model Integration Notes",
+    "chunk_index": 0,
+    "text": "# Model Integration and Google Cloud\n\n## Model integration\n\nA cloud AI application separates the model from the application that calls it. The application sends a request to a model endpoint and processes the response.\n\n## Document-grounded question answering"
+  },
+  {
+    "chunk_id": "model_integration_notes.md::chunk-1",
+    "source": "model_integration_notes.md",
+    "title": "Model Integration Notes",
+    "chunk_index": 1,
+    "text": "A retrieval system searches a document collection for relevant passages. Those passages can be provided as context to a language model so the answer can be grounded in the available documents.\n\n## Application deployment\n\nCloud Run can host a web application or API that calls a model service. The application still needs authentication, error handling, logging, and appropriate access controls."
+  },
+  {
+    "chunk_id": "rag_architecture.md::chunk-0",
+    "source": "rag_architecture.md",
+    "title": "Rag Architecture",
+    "chunk_index": 0,
+    "text": "# Retrieval-Augmented Generation Architecture\n\nRetrieval-Augmented Generation (RAG) combines information retrieval with a language model. Instead of relying only on information learned during training, an application retrieves relevant passages from an external knowledge source and supplies them as context for answer generation."
+  },
+  {
+    "chunk_id": "rag_architecture.md::chunk-1",
+    "source": "rag_architecture.md",
+    "title": "Rag Architecture",
+    "chunk_index": 1,
+    "text": "A typical RAG pipeline has an ingestion stage and a query stage. During ingestion, documents are loaded, split into chunks, and optionally converted into embeddings for vector search. During a query, the application retrieves relevant chunks and passes them to a language model."
+  },
+  {
+    "chunk_id": "rag_architecture.md::chunk-2",
+    "source": "rag_architecture.md",
+    "title": "Rag Architecture",
+    "chunk_index": 2,
+    "text": "Retrieval quality affects answer quality. If the retrieved passages do not contain the information needed to answer a question, the language model may produce an incomplete or unsupported answer. Applications should evaluate retrieval separately from answer generation."
+  },
+  {
+    "chunk_id": "retrieval_evaluation.md::chunk-0",
+    "source": "retrieval_evaluation.md",
+    "title": "Retrieval Evaluation",
+    "chunk_index": 0,
+    "text": "# Evaluating Information Retrieval\n\nRetrieval evaluation measures whether a search system returns relevant documents for a query. A benchmark contains questions and labels identifying which document chunks are relevant to each question."
+  },
+  {
+    "chunk_id": "retrieval_evaluation.md::chunk-1",
+    "source": "retrieval_evaluation.md",
+    "title": "Retrieval Evaluation",
+    "chunk_index": 1,
+    "text": "Hit Rate at k measures the fraction of questions for which at least one relevant chunk appears in the top k results. Recall at k measures the fraction of all labeled relevant chunks that appear in the top k results. Mean Reciprocal Rank (MRR) averages the reciprocal of the rank of the first relevant result across questions."
+  },
+  {
+    "chunk_id": "retrieval_evaluation.md::chunk-2",
+    "source": "retrieval_evaluation.md",
+    "title": "Retrieval Evaluation",
+    "chunk_index": 2,
+    "text": "Evaluation metrics depend on accurate relevance labels and a sufficiently varied dataset. A perfect score on a tiny dataset does not establish that a retrieval system will perform well on unseen questions. A useful experiment should include multiple documents, varied questions, and cases where relevant content is not the first result."
   }
 ]

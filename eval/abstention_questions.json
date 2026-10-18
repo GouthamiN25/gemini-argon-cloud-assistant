@@ -1,0 +1,26 @@
+[
+  {
+    "question": "How do I bake a chocolate cake?",
+    "category": "out_of_scope"
+  },
+  {
+    "question": "What was the final score of the 2026 World Series?",
+    "category": "out_of_scope"
+  },
+  {
+    "question": "What is the current price of BigQuery on Google Cloud?",
+    "category": "out_of_scope"
+  },
+  {
+    "question": "What is the weather forecast for tomorrow?",
+    "category": "out_of_scope"
+  },
+  {
+    "question": "How much will it cost to deploy this application on Cloud Run?",
+    "category": "borderline"
+  },
+  {
+    "question": "Which exact IAM roles should I assign to deploy this application securely?",
+    "category": "borderline"
+  }
+]

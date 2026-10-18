@@ -1,0 +1,51 @@
+[
+  {
+    "question": "What platform can host a containerized AI application?",
+    "relevant_chunk_ids": [
+      "cloud_run_deployment.md::chunk-0"
+    ]
+  },
+  {
+    "question": "What responsibilities do developers retain when deploying on Cloud Run?",
+    "relevant_chunk_ids": [
+      "cloud_run_deployment.md::chunk-1"
+    ]
+  },
+  {
+    "question": "How does RAG provide external knowledge to a language model?",
+    "relevant_chunk_ids": [
+      "rag_architecture.md::chunk-0",
+      "model_integration_notes.md::chunk-1"
+    ]
+  },
+  {
+    "question": "What responsibilities does an application calling a model endpoint have?",
+    "relevant_chunk_ids": [
+      "model_integration_notes.md::chunk-0"
+    ]
+  },
+  {
+    "question": "What are the ingestion and query stages in a RAG pipeline?",
+    "relevant_chunk_ids": [
+      "rag_architecture.md::chunk-1"
+    ]
+  },
+  {
+    "question": "Why can irrelevant retrieved passages lead to unsupported answers?",
+    "relevant_chunk_ids": [
+      "rag_architecture.md::chunk-2"
+    ]
+  },
+  {
+    "question": "What do Hit Rate at k, Recall at k, and MRR measure?",
+    "relevant_chunk_ids": [
+      "retrieval_evaluation.md::chunk-1"
+    ]
+  },
+  {
+    "question": "Why is a perfect retrieval score on a tiny dataset insufficient evidence of general performance?",
+    "relevant_chunk_ids": [
+      "retrieval_evaluation.md::chunk-2"
+    ]
+  }
+]

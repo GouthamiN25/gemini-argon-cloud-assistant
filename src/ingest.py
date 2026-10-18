@@ -8,7 +8,7 @@ RAW_DIR = ROOT / "data" / "raw"
 OUTPUT_FILE = ROOT / "data" / "processed" / "chunks.json"
 
 SUPPORTED_EXTENSIONS = {".md", ".txt"}
-MAX_CHARS = 1200
+MAX_CHARS = 400
 
 
 def split_into_chunks(text: str, max_chars: int = MAX_CHARS) -> list[str]:

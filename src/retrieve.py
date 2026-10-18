@@ -4,15 +4,24 @@ import re
 import sys
 from pathlib import Path
 
-from rank_bm25 import BM25Okapi
+from rank_bm25 import BM25L
 
 ROOT = Path(__file__).resolve().parents[1]
 CHUNKS_FILE = ROOT / "data" / "processed" / "chunks.json"
+STOP_WORDS = {
+    "a", "an", "and", "are", "as", "at", "be", "by", "does", "for",
+    "from", "how", "in", "is", "it", "of", "on", "or", "the", "to",
+    "today", "what", "with",
+}
 
 
 def tokenize(text: str) -> list[str]:
-    """Normalize text into lowercase word tokens."""
-    return re.findall(r"\b[a-z0-9_]+\b", text.lower())
+    """Normalize text and remove common words that do not aid retrieval."""
+    return [
+        token
+        for token in re.findall(r"\b[a-z0-9_]+\b", text.lower())
+        if token not in STOP_WORDS
+    ]
 
 
 def load_chunks() -> list[dict]:
@@ -48,7 +57,10 @@ def retrieve(query: str, top_k: int = 3) -> list[dict]:
     if not tokenized_query:
         return []
 
-    bm25 = BM25Okapi(tokenized_docs)
+    # BM25L keeps IDF values positive even in a very small corpus.  Standard
+    # BM25Okapi can assign negative scores when a term appears in every
+    # document (including the one-document corpus used by this project).
+    bm25 = BM25L(tokenized_docs)
     scores = bm25.get_scores(tokenized_query)
 
     ranked_indices = sorted(
