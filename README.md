@@ -171,6 +171,30 @@ python -m pip check
 - Tune the abstention threshold using a separate validation set.
 - Explore answer generation with citations only after retrieval quality and grounding are evaluated.
 
-## License
 
-Add a license before distributing or reusing this project under explicit open-source terms.
+## 📜 License
+
+© 2025 Gouthami Nadupuri
+All Rights Reserved.
+
+This project, its source code, architecture, documentation, and assets are the exclusive intellectual property of Gouthami Nadupuri.
+
+You may NOT copy, reproduce, modify, clone, redistribute, or reuse any part of this repository without explicit written permission.
+
+Unauthorized usage constitutes copyright infringement.
+
+## ⚠️ Disclaimer
+This project is intended solely for educational, research, and hackathon demonstration purposes.
+It does not provide financial advice, security guarantees, or production-grade fraud assessment.
+
+Any insights or outputs generated should not be used for real-world financial decision-making or business operations.
+The author assumes no liability for misuse, misinterpretation, or unauthorized use of the project.
+
+## 👩‍💻 Author
+Gouthami Nadupuri
+
+Data & AI Engineer | Creator of CurioGalaxy 💫
+
+🔗 LinkedIn: https://www.linkedin.com/in/gouthami-nadupuri
+
+🔗 GitHub: https://github.com/GouthamiN25
